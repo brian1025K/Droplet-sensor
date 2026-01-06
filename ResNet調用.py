@@ -6,7 +6,7 @@ from PIL import Image
 
 # ================= 設定區 =================
 VIDEO_PATH = r"C:\Users\User\Downloads\Polydisperse droplets (1 ppm PFOA) .mp4"
-MODEL_PATH = '0105_test-4.pth'
+MODEL_PATH = '0106_training.pth'
 INTERVAL_SECONDS = 10
 # =========================================
 
