@@ -1,4 +1,4 @@
-# 服務於Droplet sensor的 ResNet AI圖象辨識模型
+# 服務於Droplet sensor的 ResNet AI圖象辨識
 
 ## 使用ResNet做圖片辨識
 1. 使用pytorch作為本次的核心程式庫
