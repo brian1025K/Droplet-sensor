@@ -4,11 +4,10 @@ import torch.nn as nn
 from torchvision import models, transforms
 from PIL import Image
 
-# ================= 設定區 =================
+# 設定區 
 VIDEO_PATH = r"C:\Users\User\Downloads\Polydisperse droplets (1 ppm PFOA) .mp4"
 MODEL_PATH = '0106_training.pth'
 INTERVAL_SECONDS = 10
-# =========================================
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
