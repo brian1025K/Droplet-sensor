@@ -1,8 +1,8 @@
 # 服務於Droplet sensor的 ResNet AI圖象辨識
 
-## 使用ResNet做圖片辨識
+## 使用ResNet pre-train model做圖片辨識
 1. 使用pytorch作為本次的核心程式庫
-2. 微調了ResNet18，用於辨識是否有變化
+2. 微調了ResNet18模型，用於辨識是否有變化
 3. 因為圖片與預訓練的圖片差異極大，所以採取了全微調(Full fine-tuning)策略
 4. 看Loss及Accuracy都不錯，模型收斂佳
 5. 寫了調用模型的程式，支援將影片每隔n秒擷取一幀作為辨識輸入源
