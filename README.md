@@ -3,7 +3,7 @@
 Language option:
 - [English](README.en.md)
 
-## Workflow:
+## Workflow
 
 從影片中擷取圖片 -> 資料標記(labeling) -> 模型訓練/微調 -> 調用model做未知影片的推理
 
@@ -20,18 +20,18 @@ Language option:
 1. Training loss及Training accuracy都不錯，模型可以收斂
 2. 可以分辨出訓練集的影片在幾秒時有變化
 
-## 目前問題:
+## 目前問題
 
 1. 資料太少太單一，導致模型在推論非訓練集的影片時準確度會變很差
 2. 沒有足夠算力支援處理影片，所以只能採用截取幀的方式來做圖象訓練
 
-## 未來可期:
+## 未來可期
 
 1. 增加更多不同類型的圖片，應付各種不同的情景
 2. 如果圖片夠多了，可嘗試更大參數的模型(ex.ResNet50)
 3. 定量問題
 
-## 參考資料:
+## 參考資料
 
 Fine-Tuning a Pre-Trained ResNet-18 Model for Image Classification on Custom Dataset with PyTorch
 
