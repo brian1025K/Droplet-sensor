@@ -1,4 +1,4 @@
-# 服務於Droplet sensor的圖象辨識
+# 服務於Droplet sensor的圖像辨識
 
 ## Workflow:
 
