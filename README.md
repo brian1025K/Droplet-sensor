@@ -2,18 +2,20 @@
 
 ## Workflow:
 
-從影片中擷取圖片 -> 資料標記(labeling) -> 模型訓練/微調 -> 調用model做推理
+從影片中擷取圖片 -> 資料標記(labeling) -> 模型訓練/微調 -> 調用model做未知影片的推理
 
-## 使用ResNet pre-trained model做圖片辨識
-1. 使用pytorch作為本次的核心程式庫
-2. 微調了ResNet18模型，用於辨識是否有變化
-3. 因為圖片與預訓練的圖片差異極大，所以採取了全微調(Full fine-tuning)策略
-4. 圖片沒有很多，且不同樣本間差異小，所以有使用數據增強(隨機旋轉，隨機明暗度等)
-5. 看Loss及Accuracy都不錯，模型收斂佳
-6. 寫了調用模型的程式，支援將影片每隔n秒擷取一幀作為辨識輸入源
-7. 輸出格式如下:
+## 簡介
+1. 使用ResNet18 pre-trained model做圖片辨識
+2. 因為圖片與預訓練的圖片差異極大，所以採取了全微調(Full fine-tuning)策略
+3. 圖片沒有很多，且不同樣本間差異小，所以有使用數據增強(隨機旋轉，隨機明暗度等)
+4. 寫了調用模型的程式，支援將影片每隔n秒擷取一幀作為辨識輸入源
+5. 輸出格式如下:
 <img width="406" height="229" alt="image" src="https://github.com/user-attachments/assets/bc588f7a-b8b3-4ac4-b488-924276a13589" />
 
+## 初步結果
+
+1. Training loss及Training accuracy都不錯，模型可以收斂
+2. 可以分辨出訓練集的影片在幾秒時有變化
 
 ## 目前問題:
 
