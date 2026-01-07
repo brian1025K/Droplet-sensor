@@ -1,5 +1,8 @@
 # 服務於Droplet sensor的圖像辨識
 
+Language option:
+- [English](README.en.md)
+
 ## Workflow:
 
 從影片中擷取圖片 -> 資料標記(labeling) -> 模型訓練/微調 -> 調用model做未知影片的推理
