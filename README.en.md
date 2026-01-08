@@ -19,13 +19,15 @@ Extract frames from video -> Data labeling -> Model training/fine-tuning -> Infe
 
 5. Output format as follows:
 
-<img width="406" height="229" alt="image" src="https://github.com/user-attachments/assets/bc588f7a-b8b3-4ac4-b488-924276a13589" />
+   <img width="406" height="229" alt="image" src="https://github.com/user-attachments/assets/bc588f7a-b8b3-4ac4-b488-924276a13589" />
 
 ## Preliminary Results
 
 1. Training loss and accuracy are satisfactory; the model converges
 
-2. Can identify the specific seconds where changes occur in the training videos
+   <img width="429" height="180" alt="image" src="https://github.com/user-attachments/assets/e9759e6c-f557-4471-8349-6deb2f9478f6" />
+
+3. Can identify the specific seconds where changes occur in the training videos
 
 ## Current Issues
 
