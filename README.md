@@ -13,12 +13,16 @@ Language option:
 3. 圖片沒有很多，且不同樣本間差異小，所以有使用數據增強(隨機旋轉，隨機明暗度等)
 4. 寫了調用模型的程式，支援將影片每隔n秒擷取一幀作為辨識輸入源
 5. 輸出格式如下:
-<img width="406" height="229" alt="image" src="https://github.com/user-attachments/assets/bc588f7a-b8b3-4ac4-b488-924276a13589" />
+   
+   <img width="406" height="229" alt="image" src="https://github.com/user-attachments/assets/bc588f7a-b8b3-4ac4-b488-924276a13589" />
 
 ## 初步結果
 
 1. Training loss及Training accuracy都不錯，模型可以收斂
-2. 可以分辨出訓練集的影片在幾秒時有變化
+
+   <img width="429" height="180" alt="image" src="https://github.com/user-attachments/assets/40ba46c6-3f1e-42b3-a2f2-ead58f2d01e1" />
+
+3. 可以分辨出訓練集的影片在幾秒時有變化
 
 ## 目前問題
 
