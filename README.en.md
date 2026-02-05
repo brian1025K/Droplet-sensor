@@ -35,6 +35,8 @@ Extract frames from video -> Data labeling -> Model training/fine-tuning -> Infe
 
 2. Insufficient computing power for direct video processing, necessitating frame extraction for image-based training
 
+3. Currently, embedding change timestamps directly into the video might affect model inference (to be verified)
+
 ## Future Prospects
 
 1. Collect more diverse images to handle various scenarios
