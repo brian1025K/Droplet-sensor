@@ -31,7 +31,7 @@ Extract frames from video -> Data labeling -> Model training/fine-tuning -> Infe
 
 ## Current Issues
 
-1. Dataset is too small and homogeneous, causing poor accuracy during inference on non-training videos
+1. Dataset is too small and homogeneous, causing poor accuracy during inference on non-training videos (Gradually improving)
 
 2. Insufficient computing power for direct video processing, necessitating frame extraction for image-based training
 
@@ -42,6 +42,10 @@ Extract frames from video -> Data labeling -> Model training/fine-tuning -> Infe
 2. Try larger models (e.g., ResNet50) if the dataset becomes sufficient
 
 3. Quantification issues
+
+## Update Log
+
+2026/2/5 : Split training and test sets, added evaluation metrics such as the confusion matrix, and added training images (162 total).
 
 ## References
 
