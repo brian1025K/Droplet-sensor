@@ -5,8 +5,8 @@ from torchvision import models, transforms
 from PIL import Image
 
 # 設定區 
-VIDEO_PATH = r"C:\Users\User\Downloads\Polydisperse droplets (1 ppm PFOA) .mp4"
-MODEL_PATH = '0107_training.pth'
+VIDEO_PATH = r"C:\Users\User\Downloads\0204 10 ppb.mov"
+MODEL_PATH = '0205_training.pth'
 INTERVAL_SECONDS = 10
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -15,7 +15,7 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 checkpoint = torch.load(MODEL_PATH, map_location=device)
 classes = checkpoint['classes']
 
-model = models.resnet18(weights=None)
+model = models.resnet18(weights=models.ResNet18_Weights.IMAGENET1K_V1)
 model.fc = nn.Linear(model.fc.in_features, len(classes))
 model.load_state_dict(checkpoint['model_state_dict'])
 model = model.to(device).eval()
