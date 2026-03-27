@@ -13,7 +13,7 @@ JSON_FILE = './0327_labeling.json'
 IMG_ROOT = './images'
 BATCH_SIZE = 32
 EPOCHS = 10
-LEARNING_RATE = 1e-4  # 全面微調時，LR 必須小 (1e-4 ~ 1e-5)
+LEARNING_RATE = 1e-5  # 全面微調時，LR 必須小 (1e-4 ~ 1e-5)
 TRAIN_RATIO = 0.6
 
 

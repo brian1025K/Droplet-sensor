@@ -10,19 +10,17 @@ Language option:
 ## 簡介
 1. 使用ResNet18 pre-trained model做圖片辨識
 2. 因為圖片與預訓練的圖片差異極大，所以採取了全微調(Full fine-tuning)策略
-3. 圖片沒有很多，且不同樣本間差異小，所以有使用數據增強(隨機旋轉，隨機明暗度等)
+3. ~~圖片沒有很多，且不同樣本間差異小，所以有使用數據增強(隨機旋轉，隨機明暗度等)~~(已解決)
 4. 寫了調用模型的程式，支援將影片每隔n秒擷取一幀作為辨識輸入源
 5. 輸出格式如下:
    
    <img width="406" height="229" alt="image" src="https://github.com/user-attachments/assets/bc588f7a-b8b3-4ac4-b488-924276a13589" />
 
-## 初步結果
+## 目前結果
 
-1. Training loss及Training accuracy都不錯，模型可以收斂
+1. 圖片量多，關閉數據增強
 
-   <img width="429" height="180" alt="image" src="https://github.com/user-attachments/assets/40ba46c6-3f1e-42b3-a2f2-ead58f2d01e1" />
-
-3. 可以分辨出訓練集的影片在幾秒時有變化
+2. 目前模型預測結果趨於穩定，準確度高
 
 ## 目前問題
 
@@ -37,7 +35,17 @@ Language option:
 
 ## 更新日誌
 
-2026/2/5 劃分出訓練集&測試集，並增加confusion matrix等評估用指標。增加了一些圖片做訓練(共162張)
+2026/2/5 
+
+1. 劃分出訓練集&測試集，並增加confusion matrix等評估用指標。增加了一些圖片做訓練(共162張)
+
+2026/3/27 
+
+1. 拆分/重構程式(Traing資料夾)
+
+2. 增加data量(目前共379張照片)
+
+3. 新增Training時的ACC曲線，Loss曲線及ROC曲線
 
 ## 參考資料
 

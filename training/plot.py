@@ -39,6 +39,7 @@ def plot_accuracy_curves(history):
     ax.set_title('Training & Testing Accuracy', fontsize=14)
     ax.set_xlabel('Epoch', fontsize=12)
     ax.set_ylabel('Accuracy (%)', fontsize=12)
+    ax.set_ylim(50, 100)
     ax.set_xticks(epochs)
 
     ax.legend(fontsize=11)
