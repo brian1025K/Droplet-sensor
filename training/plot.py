@@ -3,6 +3,7 @@ from sklearn.metrics import ConfusionMatrixDisplay
 import numpy as np
 from sklearn.metrics import roc_curve, auc
 import torch
+import pandas as pd
 
 # confusion matrix
 def plot_confusion_matrix(cm, class_names):
@@ -107,5 +108,12 @@ def plot_roc_curve(model, dataloader, device, dataset_classes):
     
     fig.tight_layout()
     plt.show()
-    
+
+    #儲存roc 表
+    df_roc = pd.DataFrame({
+    'FPR': fpr,
+    'TPR': tpr
+    })
+    df_roc.to_csv('roc_curve.csv', index=False)
+
     return fig
