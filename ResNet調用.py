@@ -6,7 +6,7 @@ from PIL import Image
 
 # 設定區 
 VIDEO_PATH = r"C:\Users\User\Downloads\0204 10 ppb.mov"
-MODEL_PATH = '0205_training.pth'
+MODEL_PATH = '0327_training.pth'
 INTERVAL_SECONDS = 10
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
