@@ -5,9 +5,9 @@ from torchvision import models, transforms
 from PIL import Image
 
 # 設定區 
-VIDEO_PATH = r"C:\Users\User\Downloads\0204 10 ppb.mov"
+VIDEO_PATH = r"Video\0204-400 ppb 500 uL.min.mov"
 MODEL_PATH = '0327_training.pth'
-INTERVAL_SECONDS = 10
+INTERVAL_SECONDS = 1
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
@@ -51,7 +51,7 @@ for frame_pos in range(0, total_frames, frame_interval):
     pred_idx = torch.argmax(probs).item()
     timestamp = frame_pos / fps
     
-    print(f"時間: {timestamp:7.2f} 秒 | 預測: {classes[pred_idx]:<10} (信心度: {probs[pred_idx]:.4f})")
+    print(f"Time: {timestamp:7.2f} s | Prediction: {classes[pred_idx]:<10} (Confidence: {probs[pred_idx]:.4f})")
 
 cap.release()
-print("檢測完成")
+print("Detection completed")

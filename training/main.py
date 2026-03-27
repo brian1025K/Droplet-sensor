@@ -9,7 +9,7 @@ import plot as pl
 
 # 設定
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-JSON_FILE = './0205_labeling.json'
+JSON_FILE = './0327_labeling.json'
 IMG_ROOT = './images'
 BATCH_SIZE = 32
 EPOCHS = 10

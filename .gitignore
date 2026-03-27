@@ -6,3 +6,5 @@ __pycache__/
 *$py.class
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
+video/
+images/
