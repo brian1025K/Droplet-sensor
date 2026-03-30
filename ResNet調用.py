@@ -5,8 +5,8 @@ from torchvision import models, transforms
 from PIL import Image
 
 # 設定區 
-VIDEO_PATH = r"Video\0204-400 ppb 500 uL.min.mov"
-MODEL_PATH = '0327_training.pth'
+VIDEO_PATH = r"Video\PS-b-P4VP (300 ppb PFOA) flow rate (0.5 mL_min).mp4"
+MODEL_PATH = '0327_training-1.pth'
 INTERVAL_SECONDS = 1
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
