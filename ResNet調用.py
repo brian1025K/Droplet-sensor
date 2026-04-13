@@ -5,7 +5,7 @@ from torchvision import models, transforms
 from PIL import Image
 
 # 設定區 
-VIDEO_PATH = r"Video\PS-b-P4VP (300 ppb PFOA) flow rate (0.5 mL_min).mp4"
+VIDEO_PATH = r"C:\Users\User\Desktop\Droplet github\Video\0204 10 ppb.mov"
 MODEL_PATH = '0327_training-1.pth'
 INTERVAL_SECONDS = 1
 
