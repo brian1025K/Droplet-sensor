@@ -93,7 +93,7 @@ pl.plot_loss_curves(history)
 pl.plot_roc_curve(model, test_dataloader, DEVICE, dataset.classes)
 
 # 除存模型路徑
-model_save_path = '0327_training-1.pth'
+model_save_path = '0327_training-2.pth'
 
 # 儲存模型狀態字典和相關資訊
 torch.save({

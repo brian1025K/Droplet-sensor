@@ -35,9 +35,9 @@ def plot_accuracy_curves(history):
     fig, ax = plt.subplots(figsize=(8, 5))
 
     ax.plot(epochs, history['train_acc'], label='Train Accuracy')
-    ax.plot(epochs, history['test_acc'], label='Test Accuracy')
+    ax.plot(epochs, history['test_acc'], label='Validation Accuracy')
 
-    ax.set_title('Training & Testing Accuracy', fontsize=14)
+    ax.set_title('Training & Validation Accuracy', fontsize=14)
     ax.set_xlabel('Epoch', fontsize=12)
     ax.set_ylabel('Accuracy (%)', fontsize=12)
     ax.set_ylim(50, 100)
@@ -58,9 +58,9 @@ def plot_loss_curves(history):
     fig, ax = plt.subplots(figsize=(8, 5))
 
     ax.plot(epochs, history['train_loss'], label='Train Loss')
-    ax.plot(epochs, history['test_loss'], label='Test Loss')
+    ax.plot(epochs, history['test_loss'], label='Validation Loss')
 
-    ax.set_title('Training & Testing Loss', fontsize=14)
+    ax.set_title('Training & Validation Loss', fontsize=14)
     ax.set_xlabel('Epoch', fontsize=12)
     ax.set_ylabel('Loss', fontsize=12)
     ax.set_ylim(0, 1)
